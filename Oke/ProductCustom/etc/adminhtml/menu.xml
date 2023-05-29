@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Oke_ProductCustom::gridmanager" title="Product Custom" module="Oke_ProductCustom" sortOrder="10" resource="Oke_ProductCustom::gridmanager"/>
+    	<add id="Oke_ProductCustom::create" title="Product Custom List" module="Oke_ProductCustom" sortOrder="20" parent="Oke_ProductCustom::gridmanager" action="productcustom/grid/index" resource="Oke_ProductCustom::create"/>
+    </menu>
+</config>

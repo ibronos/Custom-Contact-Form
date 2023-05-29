@@ -1,0 +1,57 @@
+<div class="product-custom-form">
+    <h3>AANVRAAGFORMULIER</h3>
+    <form action="<?php echo $block->getFormAction() ?>" method="post" enctype="multipart/form-data">
+        <div class="field field-firstname w50">
+            <label><?= $block->escapeHtml(__('Voornaam')) ?></label>
+            <input name="firstname" type="text">
+        </div>
+       
+        <div class="field field-lastname w50">
+            <label><?= $block->escapeHtml(__('Achternaam')) ?></label>
+            <input name="lastname" type="text">
+        </div>
+
+        <div class="field field-email w50">
+            <label><?= $block->escapeHtml(__('E-mail')) ?></label>
+            <input name="email" type="email">
+        </div>
+       
+        <div class="field field-phone w50">
+            <label><?= $block->escapeHtml(__('Telefoon')) ?></label>
+            <input name="phone" type="text">
+        </div>
+
+        <div class="field">
+            <label><?= $block->escapeHtml(__('Voeg bijlage toe')) ?></label>
+            <div class="input-file">
+                <input name="file" type="file" style="color:transparent;" onchange="this.style.color = 'black';" />
+            </div>
+        </div>
+
+        <div class="field">
+            <label><?= $block->escapeHtml(__('Bericht')) ?></label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="field agreement">
+            <span class="control">
+                <input name="agreement"
+                    id="agreement"
+                    title="<?= $block->escapeHtmlAttr(__('agreement')) ?>"
+                    value="agree"
+                    class="input-text"
+                    type="checkbox" />
+            </span>
+            <label class="label" for="agreement">
+                <span>
+                    <?= $block->escapeHtml(__('Ik ga akkoord met de privacy.')) ?>
+                </span>
+            </label>
+        </div>
+      
+        <div class="field">
+            <input type="submit"  class="submit-btn" value="VERZENDEN">
+        </div>
+
+    </form>
+</div>
